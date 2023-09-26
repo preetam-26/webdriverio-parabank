@@ -21,7 +21,7 @@ class AccountOverviewPage extends Page {
     }
 
     public get accNumber () {
-        return $("//a[text()='20670']");
+        return $("//a[text()='19338']");
     }
 
     public get depositedAmount () {

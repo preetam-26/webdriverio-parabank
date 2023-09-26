@@ -6,7 +6,7 @@ import AccoutOverviewPage from '../pageobjects/accOverview.page'
 describe('My Account Overview application', () => {
     it('should validate the account number', async () => {
         await TransferFundsPage.open()
-        await AccoutOverviewPage.accOverview('dlf', 'dlf')
+        await AccoutOverviewPage.accOverview('kgf', 'kgf')
         await TransferFundsPage.clickOnTransferFunds()
         await TransferFundsPage.enterAMount()
         await TransferFundsPage.clickTransfer()

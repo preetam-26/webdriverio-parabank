@@ -31,8 +31,9 @@ export const config: Options.Testrunner = {
     // will be called from there.
     //
     specs: [
-        //'./test/specs/**/transferFunds.test.ts'
-        './api test/post_request.ts'
+        './test/specs/**/register.test.ts'
+        //'./api test/get_request.ts'
+        //'./test/api-tests/testservices/get_request.js'
     ],
     // Patterns to exclude.
     exclude: [
