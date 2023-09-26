@@ -1,11 +1,6 @@
 import { expect } from '@wdio/globals'
 import AccoutOverviewPage from '../pageobjects/accOverview.page'
-//const axios = require("axios");
-//import { expect } from '@wdio/globals'
-//const {expect} = require("chai");
 import supertest from 'supertest'
-
-//import SecurePage from '../pageobjects/secure.page'
 
 describe('My Account Overview application', () => {
     it('should validate the account number', async () => {
@@ -18,7 +13,7 @@ describe('My Account Overview application', () => {
         await browser.pause(4000)
     })
 
-    it.only('should validate the amount deposited to the account number', async () => {
+    it('should validate the amount deposited to the account number', async () => {
         await AccoutOverviewPage.open()
         let getTitle = await browser.getTitle()
         await expect(getTitle).toEqual('ParaBank | Welcome | Online Banking')

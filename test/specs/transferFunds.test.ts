@@ -1,10 +1,8 @@
-//import { expect } from '@wdio/globals'
 import TransferFundsPage from '../pageobjects/transferFunds.page'
 import AccoutOverviewPage from '../pageobjects/accOverview.page'
 const xml2js = require('xml2js')
 import supertest from 'supertest'
 let response: supertest.Response;
-//import SecurePage from '../pageobjects/secure.page'
 
 describe('My Account Overview application', () => {
     it('should validate the account number', async () => {
