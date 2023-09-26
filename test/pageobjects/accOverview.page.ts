@@ -21,7 +21,7 @@ class AccountOverviewPage extends Page {
     }
 
     public get accNumber () {
-        return $("//a[text()='19338']");
+        return $("//tr[@class='ng-scope']//a");
     }
 
     public get depositedAmount () {
